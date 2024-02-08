@@ -1,12 +1,15 @@
 <?php
-switch ($actions)
+switch ($action)
 {
-    case'reponse':
+    case 'reponse':
+{
+         var_dump ($_REQUEST);
+         $liste = $_REQUEST['liste'];
 
-{
-    echo 'Partie à coder';
-  break;
-    }
+
+         include 'views/reponse.php';
+         break;
+}
     default:
     {include 'views/choix.php';}
 }
